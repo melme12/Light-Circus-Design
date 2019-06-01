@@ -1,0 +1,29 @@
+/* ==== MIXINS ==== */
+
+// Border Style
+@mixin box-border($border-color) {
+  border: 2px solid $border-color;
+  border-radius: 4px;
+  box-shadow: 3px 3px 0px $border-color;
+}
+
+//Soft Media Query Transition
+@mixin mq-transition {
+  -webkit-transition: all 0.5s linear;
+       -o-transition: all 0.5s linear;
+          transition: all 0.5s linear;
+} 
+
+// Include Font Family
+// Usage:@include font-face("Roboto", 400, roboto);
+@mixin font-face($name, $weight, $file) {
+  @font-face {
+    font-family: "#{$name}";
+    src: url("../assets/fonts/#{$file}.eot");
+    src: url("../assets/fonts/#{$file}.eot?#iefix") format("embedded-opentype"),
+         url("../assets/fonts/#{$file}.woff") format("woff"),
+         url("../assets/fonts/#{$file}.ttf") format("truetype"),
+         url("../assets/fonts/#{$file}.svg?#webfont") format("svg");
+    font-weight: $weight;
+  }
+}

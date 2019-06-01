@@ -1,0 +1,53 @@
+/* ==== TYPOGRAPHY ==== */
+
+body {
+  font-size: 16px;
+  font-family: "Consolas", monospace;
+  line-height: 1.6;
+}
+
+nav {
+  font-weight: 700;
+  font-size: 1.1em;
+  
+  a {
+    color: $black;
+  }
+}
+
+h1 {
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
+  font-weight: 900;
+  font-size: 3.6em;
+  text-align: center;
+  -webkit-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+}
+
+h2 {
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 2.8em;
+  border-bottom: 2px solid #ccc;
+  margin: 0;
+  -webkit-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+}
+
+.infobox-title {
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    clear: both;
+  }
+
+.hashtag {
+  font-size: 0.91em;
+  font-weight: 400;
+  color: hsla(0, 0%, 50%, 1);
+}

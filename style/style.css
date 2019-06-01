@@ -1,0 +1,215 @@
+/* This file should not contain anything but @import and comments. https://sass-guidelin.es/#main-file */
+/* ==== VARIABLES ==== */
+/* ==== MIXINS ==== */
+@import url("https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed:100,200,300,400,500,600,700,800,900&display=swap");
+/* ==== TYPOGRAPHY ==== */
+body {
+  font-size: 16px;
+  font-family: "Consolas", monospace;
+  line-height: 1.6;
+}
+
+nav {
+  font-weight: 700;
+  font-size: 1.1em;
+}
+nav a {
+  color: black;
+}
+
+h1 {
+  font-family: "Encode Sans Semi Condensed", sans-serif;
+  font-weight: 900;
+  font-size: 3.6em;
+  text-align: center;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+h2 {
+  font-family: "Encode Sans Semi Condensed", sans-serif;
+  font-weight: 300;
+  font-size: 2.8em;
+  border-bottom: 2px solid #ccc;
+  margin: 0;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+.infobox-title {
+  font-family: "Encode Sans Semi Condensed", sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  clear: both;
+}
+
+.hashtag {
+  font-size: 0.91em;
+  font-weight: 400;
+  color: gray;
+}
+
+/* ==== ALL ==== */
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: yellow;
+}
+
+body {
+  background-color: white;
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+  }
+}
+/* ==== HEADER ==== */
+header {
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 4px;
+  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0);
+  max-width: 100%;
+  margin: 0 auto 0 auto;
+  padding: 30px 30px 45px 30px;
+}
+
+nav {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+nav a {
+  padding: 7px 10px;
+  border-radius: 4px;
+  -webkit-tap-highlight-color: transparent;
+}
+nav a:hover, nav a:focus, nav a:active {
+  background-color: fuchsia;
+  border: 2px solid black;
+  border-radius: 4px;
+  box-shadow: 3px 3px 0px black;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  padding: 0 5px;
+}
+
+/* ==== CONTENT ==== */
+.content {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.toggle-content {
+  display: none;
+}
+
+.toggle-content.is-visible {
+  display: block;
+}
+
+#infobox {
+  border: 2px solid fuchsia;
+  border-radius: 4px;
+  box-shadow: 3px 3px 0px fuchsia;
+  background-color: #f9f9fa;
+  height: 100%;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+main {
+  height: 100%;
+  margin: 30px 0 0 0;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 900px) {
+  .content {
+    max-width: 1260px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  #infobox {
+    min-width: 270px;
+  }
+
+  main {
+    margin: 0 60px 0 0;
+  }
+
+  .toggle-content {
+    display: block;
+  }
+}
+/* ==== FOOTER ==== */
+footer {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+footer ul li {
+  padding: 0 10px;
+}
+
+/* ==== COMPONENTS ==== */
+.email-button {
+  background-color: #99ffcc;
+  font-weight: 700;
+  font-size: 1.4em;
+  display: block;
+  margin: 0px auto 0 auto;
+  width: 160px;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 4px;
+  box-shadow: 1px 1px 0px black;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.close {
+  float: right;
+  font-size: 1.1em;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

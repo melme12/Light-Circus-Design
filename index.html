@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link type="text/plain" rel="author" href="humans.txt" />
+        <title>Melanie Althaus – Portfolio</title>
+        <link rel="stylesheet" href="style/normalize.css">
+        <link rel="stylesheet" href="style/style.css">        
+  </head>
+
+  <body>
+
+      <header>
+        <h1>Welcome to the <span role="image" aria-label="circus">&#x1F3AA</span></h1>
+        <nav>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a class="toggle" href="#infobox">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="content">
+
+      <div class="toggle-content" id="infobox">
+        <!--<span class="close">&#10060;</span>-->
+        <p class="infobox-title">About</p>
+        <p><span role="image" aria-label="name">&#x1F60E</span> <span class="hashtag">#name</span><br>
+          Melanie Althaus</p>
+        <p><span role="image" aria-label="job-title">&#x1F984</span> <span class="hashtag">#title</span><br>
+          UX Designer and aspiring Unicorn</p>
+        <p><span role="image" aria-label="work">&#x1F4BB</span> <span class="hashtag">#work</span><br>
+          Freelance</p>
+        <p><span role="image" aria-label="location">&#x1F3E0</span> <span class="hashtag">#location</span><br>
+          Leipzig, Germany</p>
+        <p><span role="image" aria-label="social-media">&#x1F4AC</span> <span class="hashtag">#social_media</span><br>
+          <a href="#">LinkedIn</a><br>
+          <a href="#">Xing</a><br>
+          <a href="#">Instagram</a></p>
+        <a href="#" class="email-button">Email me</a>
+      </div>
+
+      <main>
+        <section>
+          <h2>Hello <span role="image" aria-label="hello">&#x1F44B</span></h2>
+          <p>Welcome to this kind of brutal but beautiful website. I created it out of pure inspiration and with no big plan what could turn out. This might be a blog, a personal site or even a designer's portfolio (because for me everything might be a portfolio, I am kinda obsessed with those).</P>
+          <p>I am still working on it, and there a lot of things still missing.</p>
+          <p>EDIT: Now I started changing it, to a mobile first approach.</p>
+        </section>
+        <section>
+          <h2>I write!</h2>
+          <p>Did you know I am a writer as well? I publish some stories on <a href="#">Medium.com</a>, others on my own <a href="#">blog</a>. Come take a look and leave some <span role="image" aria-label="love">&#x1F9E1</span>.</P>
+        </section>
+        <section>
+          <h2>Contact me</h2>
+          <p>If you would like to contact me, drop me a message via email to <a href="#">example@melanie-althaus.de</a> or on <a href="#">LinkedIn</a> or <a href="#">Xing</a>.</p>
+        </section>
+      </main>
+
+      </div>
+
+      <footer>
+      <ul>
+        <li><a href="#"><img class="icon" src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2012/png/iconmonstr-linkedin-2.png&r=0&g=0&b=238"></a></li>
+        <li><a href="#"><img class="icon" src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2012/png/iconmonstr-xing-2.png&r=0&g=0&b=238"></a></li>
+        <li><a href="#"><img class="icon" src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2016/png/iconmonstr-instagram-12.png&r=0&g=0&b=238"></a></li>
+      </ul>
+      <p><a href="#">Imprint<a/> | <a href="#">Privacy Policy</a></p>
+      <p>© <a href="#">Melanie Althaus</a> 2019</p>
+      </footer>
+
+      <script>
+        /* Toggle About box in mobile view
+        found here: https://gomakethings.com/how-to-show-and-hide-elements-with-vanilla-javascript/ */
+
+        // Show an element
+        var show = function (elem) {
+          elem.classList.add('is-visible');
+        };
+
+        // Hide an element
+        var hide = function (elem) {
+          elem.classList.remove('is-visible');
+        };
+
+        // Toggle element visibility
+        var toggle = function (elem) {
+          elem.classList.toggle('is-visible');
+        };
+
+        // Listen for click events
+        document.addEventListener('click', function (event) {
+
+          // Make sure clicked element is our toggle
+          if (!event.target.classList.contains('toggle')) return;
+
+          // Prevent default link behavior
+          event.preventDefault();
+
+          // Get the content
+          var content = document.querySelector(event.target.hash);
+          if (!content) return;
+
+          // Toggle the content
+          toggle(content);
+
+        }, false);
+      </script>
+
+  </body>
+    
+</html>

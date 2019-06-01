@@ -1,0 +1,28 @@
+/* ==== COMPONENTS ==== */
+
+.email-button {
+  background-color: $mint;
+  font-weight: 700;
+  font-size: 1.4em;
+  display: block;
+  margin: 0px auto 0 auto;
+  width: 160px;
+  padding: 10px 20px;
+  border: 2px solid hsla(0, 0%, 0%, 1);
+  border-radius: 4px;
+  box-shadow: 1px 1px 0px hsla(0, 0%, 0%, 1);
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.close {
+  float: right;
+  font-size: 1.1em;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
