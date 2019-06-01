@@ -3,6 +3,7 @@
 body {
   font-size: 16px;
   font-family: "Consolas", monospace;
+  font-weight: 400;
   line-height: 1.6;
 }
 
@@ -45,6 +46,10 @@ h2 {
     text-align: center;
     clear: both;
   }
+
+#infobox {
+  font-weight: 700;
+}
 
 .hashtag {
   font-size: 0.91em;

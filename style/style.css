@@ -6,6 +6,7 @@
 body {
   font-size: 16px;
   font-family: "Consolas", monospace;
+  font-weight: 400;
   line-height: 1.6;
 }
 
@@ -46,6 +47,10 @@ h2 {
   padding: 0;
   text-align: center;
   clear: both;
+}
+
+#infobox {
+  font-weight: 700;
 }
 
 .hashtag {
@@ -90,6 +95,9 @@ nav {
   justify-content: center;
 }
 nav a {
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 4px;
+  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0);
   padding: 7px 10px;
   border-radius: 4px;
   -webkit-tap-highlight-color: transparent;
@@ -185,6 +193,13 @@ footer ul li {
 }
 
 /* ==== COMPONENTS ==== */
+svg {
+  height: 45px;
+  width: 45px;
+  fill: blue;
+  text-decoration: underline;
+}
+
 .email-button {
   background-color: #99ffcc;
   font-weight: 700;
@@ -205,11 +220,6 @@ footer ul li {
 .close {
   float: right;
   font-size: 1.1em;
-}
-
-.icon {
-  width: 30px;
-  height: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
