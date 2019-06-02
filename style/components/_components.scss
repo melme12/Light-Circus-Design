@@ -1,29 +1,26 @@
-/* ==== COMPONENTS ==== */
-
 svg {
-  height: 45px;
-  width: 45px;
-  fill: blue;
-  text-decoration: underline;
+  height: 2.9em;
+  width: 2.9em;
+  fill: $blue;
 }
 .email-button {
-  background-color: $mint;
+  @include font-size(22px);
   font-weight: 700;
-  font-size: 1.4em;
-  display: block;
-  margin: 0px auto 0 auto;
-  width: 160px;
-  padding: 10px 20px;
-  border: 2px solid hsla(0, 0%, 0%, 1);
-  border-radius: 4px;
-  box-shadow: 1px 1px 0px hsla(0, 0%, 0%, 1);
-  cursor: pointer;
+  background-color: $mint;
   text-decoration: none;
-  color: black;
+  color: $black;
   text-align: center;
+  display: block;
+  width: 10em;
+  padding: 0.6em 1.3em;
+  margin: 0 auto;
+  border: 2px solid $black;
+  border-radius: 4px;
+  box-shadow: 1px 1px 0px $black;
+  cursor: pointer;
 }
 
 .close {
+  @include font-size(17px);
   float: right;
-  font-size: 1.1em;
 }

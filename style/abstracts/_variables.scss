@@ -1,11 +1,15 @@
-/* ==== VARIABLES ==== */
-
+//Basic
+$base-font-size: 16px;
 $content-width: 1260px;
+
+//Breakpoints
+$breakpoint-small: 768px;
 $breakpoint-medium: 900px;
 
 //Colors
 $white: hsla(0, 0%, 100%, 1);
 $black: hsla(0, 0%, 0%, 1);
+$blue: 	hsla(240, 100%, 50%, 1);
 $super-light-grey: hsla(240, 9%, 98%, 1);
 $mint: hsla(150, 100%, 80%, 1);
 $yellow: hsla(60, 100%, 50%, 1);

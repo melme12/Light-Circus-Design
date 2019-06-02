@@ -1,10 +1,8 @@
-/* ==== HEADER ==== */
-
 header {
-  @include box-border(hsla(0, 0%, 0%, 0));
-  max-width: 100%;
+  @include box-border(transparent);
+  max-width: $content-width;
   margin: 0 auto 0 auto;
-  padding: 30px 30px 45px 30px;
+  padding: 1.9em 1.9em 2.9em 1.9em;
 }
 
 nav {
@@ -13,25 +11,24 @@ nav {
   justify-content: center;
   
   a {
-    @include box-border(hsla(0, 0%, 0%, 0));
-    padding: 7px 10px;
-    border-radius: 4px;
+    @include box-border(transparent);
+    padding: 0.5em 0.7em;
     -webkit-tap-highlight-color: transparent;
     
     &:hover, &:focus, &:active {
       background-color: $magenta;
-      @include box-border(hsla(0, 0%, 0%, 1));
+      @include box-border($black);
     }
   }
     
   ul {
-    margin: 0;
-    padding: 0;
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
 
     li {
-      padding: 0 5px;
+      padding: 0 0.7em;
     }
   }
 }
