@@ -5,6 +5,13 @@
   box-shadow: 3px 3px 0px $border-color;
 }
 
+//Button border style
+@mixin button-border($button-border-color) {
+  border: 2px solid $button-border-color;
+  border-radius: 4px;
+  box-shadow: 2px 2px 0px $button-border-color;
+}
+
 //Soft Media Query Transition
 @mixin mq-transition {
   -webkit-transition: all 0.5s linear;

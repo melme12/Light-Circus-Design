@@ -9,6 +9,7 @@ nav {
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   
   a {
     @include box-border(transparent);
@@ -16,14 +17,15 @@ nav {
     -webkit-tap-highlight-color: transparent;
     
     &:hover, &:focus, &:active {
-      background-color: $magenta;
       @include box-border($black);
+      background-color: $magenta;
     }
   }
     
   ul {
     list-style: none;
     display: flex;
+    justify-content: center;
     margin: 0;
     padding: 0;
 

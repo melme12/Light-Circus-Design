@@ -5,18 +5,17 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  .email-button {
+    text-align: center;
+    margin: 2.5em auto 0 auto;
+  }
 }
 
-.toggle-content {
-	display: none;
-}
-
-.toggle-content.is-visible {
-	display: block;
-}
-
-#infobox {
+.infobox {
   @include box-border($magenta);
+  display: none;
+  visibility: hidden;
   background-color: $super-light-grey;
   height: 100%;
   margin: 0 auto;
@@ -36,19 +35,24 @@ section {
   .content {
     max-width: $content-width;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-between;
   }
+
+  section {
+    .email-button {
+      display: none;
+      visibility: hidden;
+    }
+  }
   
-  #infobox {
+  .infobox {
+    display: block;
+    visibility: visible;
     min-width: 270px;
   }
   
   main {
     margin: 0 3.8em 0 0;
-  }
-  
-  .toggle-content {
-	  display: block;
   }
 }

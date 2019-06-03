@@ -9,19 +9,19 @@ body {
 }
 
 nav {
-  font-weight: 700;
   font-size: 17px;
   font-size: 1.0625rem;
+  font-weight: 700;
 }
 nav a {
   color: black;
 }
 
 h1 {
-  font-family: "Encode Sans Semi Condensed", sans-serif;
-  font-weight: 900;
   font-size: 57px;
   font-size: 3.5625rem;
+  font-family: "Encode Sans Semi Condensed", sans-serif;
+  font-weight: 900;
   font-size: 15vw;
   text-align: center;
   -webkit-hyphens: none;
@@ -30,11 +30,11 @@ h1 {
 }
 
 h2 {
+  font-size: 36px;
+  font-size: 2.25rem;
   font-family: "Encode Sans Semi Condensed", sans-serif;
   font-weight: 300;
-  font-size: 44px;
-  font-size: 2.75rem;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid #cccccc;
   margin: 0;
   -webkit-hyphens: none;
   -ms-hyphens: none;
@@ -42,17 +42,17 @@ h2 {
 }
 
 .infobox-title {
-  font-family: "Encode Sans Semi Condensed", sans-serif;
-  font-weight: 300;
   font-size: 32px;
   font-size: 2rem;
+  font-family: "Encode Sans Semi Condensed", sans-serif;
+  font-weight: 300;
   margin: 0;
   padding: 0;
   text-align: center;
   clear: both;
 }
 
-#infobox {
+.infobox {
   font-weight: 700;
 }
 
@@ -89,43 +89,43 @@ body {
     transition: all 0.5s linear;
   }
 }
-/* ==== HEADER ==== */
 header {
-  border: 2px solid rgba(0, 0, 0, 0);
+  border: 2px solid transparent;
   border-radius: 4px;
-  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0);
+  box-shadow: 3px 3px 0px transparent;
   max-width: 1260px;
   margin: 0 auto 0 auto;
-  padding: 30px 30px 45px 30px;
+  padding: 1.9em 1.9em 2.9em 1.9em;
 }
 
 nav {
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 nav a {
-  border: 2px solid rgba(0, 0, 0, 0);
+  border: 2px solid transparent;
   border-radius: 4px;
-  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0);
-  padding: 7px 10px;
-  border-radius: 4px;
+  box-shadow: 3px 3px 0px transparent;
+  padding: 0.5em 0.7em;
   -webkit-tap-highlight-color: transparent;
 }
 nav a:hover, nav a:focus, nav a:active {
-  background-color: fuchsia;
   border: 2px solid black;
   border-radius: 4px;
   box-shadow: 3px 3px 0px black;
+  background-color: fuchsia;
 }
 nav ul {
-  margin: 0;
-  padding: 0;
   list-style: none;
   display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 nav ul li {
-  padding: 0 5px;
+  padding: 0 0.7em;
 }
 
 .content {
@@ -136,19 +136,17 @@ nav ul li {
   flex-direction: column;
   justify-content: space-between;
 }
-
-.toggle-content {
-  display: none;
+.content .email-button {
+  text-align: center;
+  margin: 2.5em auto 0 auto;
 }
 
-.toggle-content.is-visible {
-  display: block;
-}
-
-#infobox {
+.infobox {
   border: 2px solid fuchsia;
   border-radius: 4px;
   box-shadow: 3px 3px 0px fuchsia;
+  display: none;
+  visibility: hidden;
   background-color: #f9f9fa;
   height: 100%;
   margin: 0 auto;
@@ -168,20 +166,23 @@ section {
   .content {
     max-width: 1260px;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-between;
   }
 
-  #infobox {
+  section .email-button {
+    display: none;
+    visibility: hidden;
+  }
+
+  .infobox {
+    display: block;
+    visibility: visible;
     min-width: 270px;
   }
 
   main {
     margin: 0 3.8em 0 0;
-  }
-
-  .toggle-content {
-    display: block;
   }
 }
 footer {
@@ -209,25 +210,25 @@ svg {
 .email-button {
   font-size: 22px;
   font-size: 1.375rem;
+  border: 2px solid black;
+  border-radius: 4px;
+  box-shadow: 2px 2px 0px black;
   font-weight: 700;
   background-color: #99ffcc;
   text-decoration: none;
   color: black;
   text-align: center;
   display: block;
-  width: 10em;
-  padding: 0.6em 1.3em;
+  width: 7.5em;
+  padding: 0.6em;
   margin: 0 auto;
-  border: 2px solid black;
-  border-radius: 4px;
-  box-shadow: 1px 1px 0px black;
   cursor: pointer;
 }
-
-.close {
-  font-size: 17px;
-  font-size: 1.0625rem;
-  float: right;
+.email-button:hover, .email-button:focus, .email-button:active {
+  border: 2px solid black;
+  border-radius: 4px;
+  box-shadow: 3px 3px 0px black;
+  background-color: fuchsia;
 }
 
 /*# sourceMappingURL=style.css.map */

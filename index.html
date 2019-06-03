@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="A Light Circus Design. A basic website design.">
   <meta name="author" content="Melanie Althaus">
+  <meta name="theme-color" content="#ffffff">
   <!--Open Graph, see https://css-tricks.com/essential-meta-tags-social-media/ for more-->
   <meta property="og:title" content="Light Circus Design">
   <meta property="og:description" content="A basic website design.">
@@ -30,7 +31,7 @@
     <nav>
       <ul>
         <li><a href="#">Blog</a></li>
-        <li><a class="toggle" href="#infobox">About</a></li>
+        <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
@@ -38,8 +39,29 @@
 
   <div class="content">
 
-    <div class="toggle-content" id="infobox">
-      <!--<span class="close">&#10060;</span>-->
+    <main>
+      <section>
+        <h2>Hello <span role="image" aria-label="hello">&#x1F44B</span></h2>
+        <p>Lorem ipsum dolor amet hella plaid banjo food truck. Readymade retro humblebrag narwhal, jean shorts banjo brooklyn. Try-hard ramps tilde gochujang adaptogen vice yr sartorial portland. Williamsburg cred shabby chic raclette hexagon snackwave. Austin selfies celiac helvetica williamsburg echo park. Umami art party roof party organic you probably haven't heard of them helvetica lomo drinking vinegar kale chips.</p>
+        <p>Live-edge mlkshk tote bag succulents artisan knausgaard. Banh mi austin subway tile microdosing. Waistcoat pok pok microdosing meditation palo santo. Venmo umami PBR&B you probably haven't heard of them. Brooklyn church-key cronut tbh, bitters poutine microdosing tote bag normcore banh mi meditation hot chicken.</p>
+        <p>Polaroid before they sold out twee, ramps shoreditch portland PBR&B hashtag fashion axe church-key. Cornhole readymade shabby chic gochujang, squid photo booth polaroid church-key XOXO chartreuse. Skateboard chia portland, chicharrones post-ironic hot chicken shaman tofu hella mustache quinoa. Tousled edison bulb tumeric, microdosing blog ethical sartorial +1 selfies forage cray semiotics. Gluten-free gentrify cloud bread crucifix.</P>
+        <p>I am still working on it...</p>
+      </section>
+      <section>
+        <h2>I write!</h2>
+        <p>Did you know I am a writer as well? I publish some stories on <a href="#">Medium.com</a>, others on my own <a
+            href="#">blog</a>. Come take a look and leave some <span role="image" aria-label="love">&#x1F9E1</span>.</p>
+        <p>Glossier semiotics hashtag kale chips mlkshk you probably haven't heard of them bushwick cred cardigan activated charcoal. Mustache pok pok squid helvetica, cronut edison bulb gochujang locavore readymade photo booth. Try-hard cred air plant bespoke echo park blog messenger bag authentic brooklyn hammock austin.</p>
+      </section>
+      <section>
+        <h2>Contact me</h2>        
+        <p>If you would like to contact me, drop me a message via email to <a href="#">example@melanie-althaus.de</a> or
+          on <a href="#">LinkedIn</a> or <a href="#">Xing</a>.</p>
+        <a href="#" class="email-button">Email me</a>
+      </section>
+    </main>
+
+    <div class="infobox">
       <p class="infobox-title">Who I am</p>
       <p><span role="image" aria-label="name">&#x1F60E</span> <span class="hashtag">#name</span><br>
         Melanie Althaus</p>
@@ -55,27 +77,6 @@
         <a href="#">Instagram</a></p>
       <a href="#" class="email-button">Email me</a>
     </div>
-
-    <main>
-      <section>
-        <h2>Hello <span role="image" aria-label="hello">&#x1F44B</span></h2>
-        <p>Welcome to this kind of brutal but beautiful website. I created it out of pure inspiration and with no big
-          plan what could turn out. This might be a blog, a personal site or even a designer's portfolio (because for me
-          everything might be a portfolio, I am kinda obsessed with those).</P>
-        <p>I am still working on it, and there a lot of things still missing.</p>
-        <p>EDIT: Now I started changing it, to a mobile first approach.</p>
-      </section>
-      <section>
-        <h2>I write!</h2>
-        <p>Did you know I am a writer as well? I publish some stories on <a href="#">Medium.com</a>, others on my own <a
-            href="#">blog</a>. Come take a look and leave some <span role="image" aria-label="love">&#x1F9E1</span>.</P>
-      </section>
-      <section>
-        <h2>Contact me</h2>
-        <p>If you would like to contact me, drop me a message via email to <a href="#">example@melanie-althaus.de</a> or
-          on <a href="#">LinkedIn</a> or <a href="#">Xing</a>.</p>
-      </section>
-    </main>
 
   </div>
 
@@ -105,44 +106,6 @@
     <p><a href="#" rel="nofollow">Imprint</a> | <a href="#" rel="nofollow">Privacy Policy</a></p>
     <p>© <a href="#">Melanie Althaus</a> 2019</p>
   </footer>
-
-  <script>
-    /* Toggle About box in mobile view
-    found here: https://gomakethings.com/how-to-show-and-hide-elements-with-vanilla-javascript/ */
-
-    // Show an element
-    var show = function (elem) {
-      elem.classList.add('is-visible');
-    };
-
-    // Hide an element
-    var hide = function (elem) {
-      elem.classList.remove('is-visible');
-    };
-
-    // Toggle element visibility
-    var toggle = function (elem) {
-      elem.classList.toggle('is-visible');
-    };
-
-    // Listen for click events
-    document.addEventListener('click', function (event) {
-
-      // Make sure clicked element is our toggle
-      if (!event.target.classList.contains('toggle')) return;
-
-      // Prevent default link behavior
-      event.preventDefault();
-
-      // Get the content
-      var content = document.querySelector(event.target.hash);
-      if (!content) return;
-
-      // Toggle the content
-      toggle(content);
-
-    }, false);
-  </script>
 
 </body>
 

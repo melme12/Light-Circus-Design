@@ -5,22 +5,20 @@ svg {
 }
 .email-button {
   @include font-size(22px);
+  @include button-border($black);
   font-weight: 700;
   background-color: $mint;
   text-decoration: none;
   color: $black;
   text-align: center;
   display: block;
-  width: 10em;
-  padding: 0.6em 1.3em;
+  width: 7.5em;
+  padding: 0.6em;
   margin: 0 auto;
-  border: 2px solid $black;
-  border-radius: 4px;
-  box-shadow: 1px 1px 0px $black;
   cursor: pointer;
-}
 
-.close {
-  @include font-size(17px);
-  float: right;
+  &:hover, &:focus, &:active {
+    @include box-border($black);
+    background-color: $magenta;
+  }
 }
