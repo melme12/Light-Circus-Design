@@ -28,6 +28,10 @@ h1 {
   -ms-hyphens: none;
   hyphens: none;
 }
+h1 a {
+  text-decoration: none;
+  color: black;
+}
 
 h2 {
   font-size: 36px;
@@ -117,14 +121,14 @@ nav a:hover, nav a:focus, nav a:active {
   box-shadow: 3px 3px 0px black;
   background-color: fuchsia;
 }
-nav ul {
+nav .navbar {
   list-style: none;
   display: flex;
   justify-content: center;
   margin: 0;
   padding: 0;
 }
-nav ul li {
+nav .navbar li {
   padding: 0 0.7em;
 }
 
