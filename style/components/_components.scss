@@ -22,3 +22,14 @@ svg {
     background-color: $magenta;
   }
 }
+
+.img-container {
+  margin: 0.7em 0;
+  text-align: center;
+  
+  img {
+    @include box-border($black);
+    width: 100%;
+    max-width: 400px;
+  }
+}

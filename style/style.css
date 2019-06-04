@@ -39,10 +39,19 @@ h2 {
   font-family: "Encode Sans Semi Condensed", sans-serif;
   font-weight: 300;
   border-bottom: 2px solid #cccccc;
-  margin: 0;
+  margin: 0 0 0.7em 0;
   -webkit-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
+}
+
+h3 {
+  font-size: 26px;
+  font-size: 1.625rem;
+  font-family: "Encode Sans Semi Condensed", sans-serif;
+  font-weight: 400;
+  color: black;
+  margin: 0;
 }
 
 .infobox-title {
@@ -129,11 +138,12 @@ nav .navbar {
   padding: 0;
 }
 nav .navbar li {
-  padding: 0 0.7em;
+  padding: 0 0.1em;
 }
 
 .content {
   max-width: 100%;
+  min-height: 43em;
   margin: 0 auto;
   padding: 0 1.6em;
   display: flex;
@@ -166,6 +176,12 @@ section {
   margin-bottom: 3.8em;
 }
 
+.article-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 @media screen and (min-width: 900px) {
   .content {
     max-width: 1260px;
@@ -183,6 +199,7 @@ section {
     display: block;
     visibility: visible;
     min-width: 270px;
+    max-width: 270px;
   }
 
   main {
@@ -233,6 +250,18 @@ svg {
   border-radius: 4px;
   box-shadow: 3px 3px 0px black;
   background-color: fuchsia;
+}
+
+.img-container {
+  margin: 0.7em 0;
+  text-align: center;
+}
+.img-container img {
+  border: 2px solid black;
+  border-radius: 4px;
+  box-shadow: 3px 3px 0px black;
+  width: 100%;
+  max-width: 400px;
 }
 
 /*# sourceMappingURL=style.css.map */

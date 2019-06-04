@@ -1,0 +1,12 @@
+About box on about site
+-> what does the width do there? why is width:270px not applied?
+
+Buttons and Navigation
+ -> change colors for active etc (respong to user actions)
+
+Article page
+-> width of h2 has to be max
+
+ New pages
+ -> articles: overview of articles with proper information
+ -> single article page 

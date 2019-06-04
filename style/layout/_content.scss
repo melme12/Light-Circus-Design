@@ -1,5 +1,6 @@
 .content {
   max-width: 100%;
+  min-height: 43em;
   margin: 0 auto;
   padding: 0 1.6em;
   display: flex;
@@ -31,6 +32,12 @@ section {
   margin-bottom: 3.8em;
 }
 
+.article-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 @media screen and (min-width: $breakpoint-medium) {
   .content {
     max-width: $content-width;
@@ -50,6 +57,7 @@ section {
     display: block;
     visibility: visible;
     min-width: 270px;
+    max-width: 270px;
   }
   
   main {
