@@ -26,6 +26,7 @@
 main {
   height: 100%;
   margin: 1.9em 0 0 0;
+   
 }
 
 section {
@@ -36,6 +37,10 @@ section {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  .article-link {
+    margin: 1.5em 0;
+  }
 }
 
 @media screen and (min-width: $breakpoint-medium) {
@@ -57,10 +62,11 @@ section {
     display: block;
     visibility: visible;
     min-width: 270px;
-    max-width: 270px;
+    max-width: 270px; // WHY does width: 270px; put out less width (ca. 250px) than this solution?
   }
   
   main {
     margin: 0 3.8em 0 0;
+    width: calc(#{$content-width} - 270px);
   }
 }
