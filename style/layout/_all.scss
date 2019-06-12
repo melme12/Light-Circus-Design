@@ -1,5 +1,3 @@
-/* ==== ALL ==== */
-
 * {
   box-sizing: border-box;
 }
@@ -9,11 +7,19 @@
 }
 
 body {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
   background-color: $white;
 }
 
 @media screen and (min-width: $breakpoint-medium) {
   body {
     @include mq-transition();
+    max-width: 1260px;
+    margin: auto;
   }
 }
