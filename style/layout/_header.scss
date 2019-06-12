@@ -1,8 +1,7 @@
 header {
   @include box-border(transparent);
   max-width: $content-width;
-  margin: 0 auto 0 auto;
-  padding: 1.9em 1.9em 2.9em 1.9em;
+  padding: 1.9em;
 }
 
 nav {

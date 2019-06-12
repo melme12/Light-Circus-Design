@@ -1,11 +1,8 @@
-.content {
-  max-width: 100%;
-  min-height: 43em;
-  margin: 0 auto;
-  padding: 0 1.6em;
+.wrapper {
   display: flex;
+  flex: 1 1 auto;
   flex-direction: column;
-  justify-content: space-between;
+  padding: 0 1.6em;
 
   .email-button {
     text-align: center;
@@ -13,20 +10,30 @@
   }
 }
 
-.infobox {
-  @include box-border($magenta);
-  display: none;
-  visibility: hidden;
-  background-color: $super-light-grey;
-  height: 100%;
-  margin: 0 auto;
-  padding: 1.3em;
+main {
+  padding: 20px;
+  flex: 1 1 auto;
 }
 
-main {
-  height: 100%;
-  margin: 1.9em 0 0 0;
-   
+aside {
+  padding: 20px;
+  display: none;
+  visibility: hidden;
+}
+
+.infobox {
+  @include box-border($magenta); 
+  background-color: $super-light-grey;
+  
+  padding: 20px;
+}
+
+.category-box {
+  @include box-border(darkblue); 
+  background-color: $super-light-grey;
+  // margin: 20px auto 0 auto;
+  margin: 0 0 30px 0;
+  padding: 20px;
 }
 
 section {
@@ -44,11 +51,10 @@ section {
 }
 
 @media screen and (min-width: $breakpoint-medium) {
-  .content {
+  .wrapper {
     max-width: $content-width;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
   }
 
   section {
@@ -57,16 +63,16 @@ section {
       visibility: hidden;
     }
   }
-  
-  .infobox {
+
+  aside {
     display: block;
+    flex: 0 0 300px;
     visibility: visible;
-    min-width: 270px;
-    max-width: 270px; // WHY does width: 270px; put out less width (ca. 250px) than this solution?
   }
-  
-  main {
-    margin: 0 3.8em 0 0;
-    width: calc(#{$content-width} - 270px);
+
+  .infobox {   
+    height: auto;
   }
 }
+
+ 
