@@ -4,7 +4,7 @@ body {
   font-size: 16px;
   font-size: 1rem;
   font-family: "Consolas", monospace;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.6; }
 
 nav {
@@ -77,11 +77,14 @@ h3 {
   margin: 0; }
 
 .breadcrumbs {
-  font-size: 14px;
+  font-size: 13px;
+  font-size: 0.8125rem;
   padding: 0 0 20px 0;
   color: gray; }
 
 .article-info {
+  font-size: 13px;
+  font-size: 0.8125rem;
   padding: 0 0 20px 0;
   color: gray; }
 
